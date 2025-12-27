@@ -6,13 +6,24 @@
     <title>Mídias dinâmicas</title>
 </head>
 <body>
-    <h2>Imagens dinâmicas</h2>
+    <h1>Imagens dinâmicas</h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplimente aumente e diminua o tamanho do seu navegado</p>
     <picture>
         <source media="(max-width: 750px)" srcset="image/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="image/foto-m.png" type="image/png">
         <img src="image/foto-g.png" alt="Imagem flexível">
     </picture>
+
+    <h1>Reproduzindo Audio</h1>
+
+    <p>Vamos aprender a reproduzir um audio em HTML</p>
+
+    <audio preload="metadata" autoplay  controls loop>
+        <source src="media/Don't Wake Me Up  Color Bass  NCS.mp3" type="audio/mpeg">
+        <source src="media/Don't Wake Me Up  Color Bass  NCS.ogg" type="audio/ogg">
+        <source src="media/Don't Wake Me Up  Color Bass  NCS.wav" type="audio/wav">
+        <p>Seu navegador não consegue reproduzir o áudio. <a href="media/Don't Wake Me Up  Color Bass  NCS.mp3">Clique aqui para baixar</a></p>
+    </audio>
 
 </body>
 </html>
