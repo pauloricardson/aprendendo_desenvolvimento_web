@@ -12,3 +12,9 @@ h1{
 h2{
     color: rgb(102, 63, 0);
 }
+
+h1#principal{
+    text-align: center;
+    font-size: 3em;
+    background-color: rgb(25, 198, 25);
+}
