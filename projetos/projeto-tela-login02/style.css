@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", sans-serif;;
 }
 
 body {
@@ -13,29 +13,8 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to bottom, #010027, #7a2b00);
+    background: linear-gradient(to bottom, #010027, #d14a02);
     position: relative;
-}
-
-.estrelas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-        radial-gradient(1px 1px at 25% 15%, white, transparent),
-        radial-gradient(1px 1px at 50% 40%, white, transparent),
-        radial-gradient(2px 2px at 15% 55%, white, transparent),
-        radial-gradient(1px 1px at 70% 25%, white, transparent),
-        radial-gradient(1.5px 1.5px at 85% 60%, white, transparent),
-        radial-gradient(1px 1px at 35% 75%, white, transparent),
-        radial-gradient(1.5px 1.5px at 90% 10%, white, transparent),
-        radial-gradient(2px 2px at 5% 30%, white, transparent),
-        radial-gradient(1px 1px at 60% 85%, white, transparent),
-        radial-gradient(1.5px 1.5px at 40% 5%, white, transparent);
-    ;
-
 }
 
 .formulario{
@@ -47,6 +26,21 @@ body {
     color: #fff;
     border-radius: 16px;
     padding: 35px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+   width: 300px;
+   padding-bottom: 20px;
+}
+
+hr{
+    margin-bottom: 30px;
 }
 
 .formulario h1{
