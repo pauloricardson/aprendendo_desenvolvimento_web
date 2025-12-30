@@ -18,3 +18,20 @@ h1#principal{
     font-size: 3em;
     background-color: rgb(25, 198, 25);
 }
+
+.basico{
+    color: rgba(35, 0, 174, 0.914);
+}
+
+.intermediario{
+    color: blueviolet;
+}
+
+.avancado{
+    color: brown;
+    font-style: italic;
+}
+
+.destaque{
+    background-color: rgba(249, 232, 0, 0.638);
+}
