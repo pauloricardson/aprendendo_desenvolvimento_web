@@ -148,7 +148,7 @@ body{
     line-height: 1.8;
 }
 
-.menu .box-container{
+.box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -191,4 +191,22 @@ body{
 
 .menu .box-container .box:hover>*{
     color: var(--black);
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.review .box-container .box
+
+.rodape{
+    width: 100wv;
+    text-align: center;
+    height: 10rem;
+}
+
+.rodape p{
+    color: #fff;
 }
