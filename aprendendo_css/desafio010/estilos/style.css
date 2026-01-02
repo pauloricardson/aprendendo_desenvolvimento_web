@@ -109,10 +109,17 @@ main h2{
 }
 
 main p{
-    text-indent: 2.5em;
     text-align: justify;
     padding: 10px 0 10px 0;
     margin: 15px 0 15px 0;
+    line-height: 1.5em;
+}
+
+.titulo-imagem{
+    font-weight: 300;
+    font-weight: 0.75em;
+    text-align: center;
+    font-style: italic;
 }
 
 footer{
