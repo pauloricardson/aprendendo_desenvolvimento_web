@@ -64,7 +64,7 @@ nav{
 nav > a{
     display: inline-block;
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -96,10 +96,18 @@ main{
 main h1{
     color: var(--cor5);
     font-family: var(--fonte-android);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 main h2{
+    background-image: linear-gradient(to right, var(--cor2), var(--cor0));
     font-family: var(--fonte-android);
+    padding: 10px;
+}
+
+main p{
+    text-indent: 2.5em;
 }
 
 footer{
