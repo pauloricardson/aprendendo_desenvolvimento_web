@@ -54,6 +54,9 @@ main{
     max-width: 1000px;
     margin: auto;
     padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    margin-bottom: 30px;
+    border-radius: 0 0 10px 10px;
 }
 
 main h1{
@@ -68,6 +71,9 @@ main h2{
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.75em;
+    padding: 10px;
 }
 
 picture img{
@@ -75,8 +81,13 @@ picture img{
 }
 
 .bugdroid{
-    width: 100%;
-    max-width: 600px;
+    width: 70%;
     display: block;
     margin: 0 auto;
+}
+
+iframe{
+    display: block;
+    width: 100%;
+    margin: auto;
 }
