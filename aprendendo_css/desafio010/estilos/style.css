@@ -31,6 +31,18 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+div.video{
+    background-color: var(--cor5);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.video > iframe{
+}
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     text-align: center;
@@ -63,7 +75,7 @@ nav{
 
 nav > a{
     display: inline-block;
-    color: white;
+    color: var(--cor0);
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -144,12 +156,7 @@ picture img{
     margin: 0 auto;
 }
 
-iframe{
-    display: block;
-    width: 100%;
-    margin: auto;
-    border-radius: 10px;
-}
+
 
 main a{
     text-decoration: none;
