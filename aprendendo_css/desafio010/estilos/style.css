@@ -49,7 +49,11 @@ header > h1{
 }
 
 main{
-    background-color: white
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
 
 main h1{
@@ -68,4 +72,11 @@ footer{
 
 picture img{
     width: 100%;
+}
+
+.bugdroid{
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
 }
