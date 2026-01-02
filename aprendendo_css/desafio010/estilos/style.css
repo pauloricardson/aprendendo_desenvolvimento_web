@@ -120,6 +120,7 @@ main p{
     font-weight: 0.75em;
     text-align: center;
     font-style: italic;
+    line-height: 1em;
 }
 
 footer{
