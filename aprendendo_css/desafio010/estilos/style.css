@@ -182,6 +182,7 @@ main h3{
 }
 
 main ul{
-    list-style: none;
+    list-style-position: inside;
     list-style-image: url();
+        
 }
