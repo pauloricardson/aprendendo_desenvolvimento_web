@@ -167,22 +167,25 @@ main a:hover{
 }
 
 aside{
-    background-color: #063d1e;
+    background-color: var(--cor1);
     padding: 15px;
     margin: 15px 0 15px 0;
     border-radius: 10px;
-    color: white;
+    color: black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.30);
 }
 
 main h3{
-    color: var(--cor1);
-    font-size: 2em;
+    color: white;
+    background-color: #063d1e;
     text-align: center;
-    margin: 15px 0 15px 0;
+    padding: 10px;
+    margin: -15px -15px 0 -15px;
+    border-radius: 10px 10px 0 0;
 }
 
 main ul{
     list-style-position: inside;
     list-style-image: url();
-        
+    list-style-type: '\2714\00A0\00A0';        
 }
