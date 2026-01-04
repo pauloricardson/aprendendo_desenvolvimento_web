@@ -14,6 +14,17 @@
     font-family: "Roboto", sans-serif;
 }
 
+body{
+    background-color: var(--cor-cinza);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
 .bar-sup{
     display: flex;
     background-color: black;
@@ -56,6 +67,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px 20px 20px;
+    background-color: white;
 }
 
 .pesquisar{
@@ -168,14 +180,94 @@ nav{
             border: none;
             color: white;
             border-radius: 50px;
+            font-weight: bold;
+        }
 
+        button:hover{
+            background-color: black;
+            cursor: pointer;
         }
     }
 }
 
-.promocoes-2{
+main{
     max-width: 1200px;
-    height: 4000px;
-    background-color: #EDECEC;
     margin: auto;
 }
+
+.corpo-promocoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 250px;
+    color: white;
+    margin: 20px 0 20px 0;
+
+    
+    h1{
+        padding: 10px 0 10px 0;
+    }
+
+    .promocao1{
+        width: 100%;
+        height: 100%;
+        background-image: url(https://static.wixstatic.com/media/c22c23_e140bfa8cd6f4cb2ac5ee6e204f64073~mv2.jpg/v1/fill/w_893,h_468,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_e140bfa8cd6f4cb2ac5ee6e204f64073~mv2.jpg);
+        background-position: center center;
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promocao2{
+        width: 100%;
+        height: 100%;
+        background-image: url(https://static.wixstatic.com/media/c837a6_d84a631864a442a496670bc2d787c6a0~mv2.jpg/v1/fill/w_893,h_468,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d84a631864a442a496670bc2d787c6a0~mv2.jpg);
+        background-position: center center;
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        background-color: white;
+        padding: 10px 30px 10px 30px;
+        border: none;
+        color: black;
+        border-radius: 50px;
+        margin-top: auto;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .promocao1:hover, .promocao2:hover{
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+}
+
+.info{
+    background-color: white;
+    margin: 20px 0 20px 0;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        img{
+            height: 30px;
+        }
+    }
+}
+
