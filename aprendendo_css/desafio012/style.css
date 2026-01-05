@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: 'Xilogravura';
+    src: url(font/xilosa_.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +13,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: 'Xilogravura';
 }
 
 header{
@@ -53,9 +59,13 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    max-width: 400px;
     background-color: rgba(0, 0, 0, 0.406);
     padding: 20px;
+}
+
+section.normal > p{
+    padding-left: 20px;
 }
 
 footer{
