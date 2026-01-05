@@ -72,14 +72,15 @@ header{
 
 .pesquisar{
     position: relative;
-    width: 400px;
+    width: 20%;
+    margin: 0 40px 0 40px;
 }
 
 .pesquisar input{
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    border: 1px solid black;
+    background-color: var(--cor-cinza);
+    border: none;
     outline: none;
     padding: 10px 10px 10px 20px;
     font-style: italic;
@@ -321,6 +322,7 @@ footer{
 
         a:hover{
             color: #542E95;
+            text-decoration: underline;
         }
     }
 }
