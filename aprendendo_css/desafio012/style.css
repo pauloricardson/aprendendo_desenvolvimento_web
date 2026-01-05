@@ -20,15 +20,12 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 40px 0 40px 0;
 }
 
 header > h1{
-    padding-top: 50px;
     font-variant: small-caps;
-}
-
-header > p{
-    padding-bottom: 40px;
+    font-size: 10vw;
 }
 
 a{
@@ -44,8 +41,9 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 1.4em;
     padding: 30px;
+    font-size: 4.5vw;
 }
 
 section.normal{
@@ -59,7 +57,7 @@ section.imagem{
 }
 
 section.imagem > p{
-    max-width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.406);
     padding: 20px;
 }
