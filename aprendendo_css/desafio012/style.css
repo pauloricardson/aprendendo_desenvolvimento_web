@@ -43,7 +43,8 @@ section{
     padding-bottom: 10vh;
     line-height: 1.4em;
     padding: 30px;
-    font-size: 4.5vw;
+    font-size: 5vw;
+    height: 50vh;
 }
 
 section.normal{
