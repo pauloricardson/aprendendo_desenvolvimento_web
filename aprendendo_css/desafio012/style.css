@@ -74,7 +74,7 @@ section.normal > p{
 }
 
 #img1, #img2{
-    background-position: right center;
+    background-position: center;
     background-size: cover;
 }
 
