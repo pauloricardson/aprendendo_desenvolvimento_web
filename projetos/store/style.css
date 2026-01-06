@@ -77,8 +77,36 @@ header nav ul li:hover::after{
     transform: translate(-50%, -50%);
     filter: blur(50px);
     z-index: 1;
+    animation: pulse 4s infinite alternate;
 }
 
 @keyframes pulse{
-    
+    0%{
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+.list{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
 }
