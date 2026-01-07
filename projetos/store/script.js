@@ -10,3 +10,16 @@ const total = items.length;
 
 let timer;
 
+
+function update(direction) {
+    
+}
+
+
+prevButton.addEventListener('click', function() {
+    update(-1);
+})
+
+nextButton.addEventListener('click', function() {
+    update(+2);
+})
