@@ -29,6 +29,8 @@ function update(direction) {
 
     items[active].classList.add('active');
     dots[active].classList.add('active');
+
+    numberIndicator.textContent = String("0" + (active + 1));
 }
 
 prevButton.addEventListener('click', function() {
