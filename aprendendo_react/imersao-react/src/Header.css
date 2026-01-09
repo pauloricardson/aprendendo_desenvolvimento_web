@@ -1,0 +1,27 @@
+.header-container{
+    max-width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo{
+    width: 250px;
+    height: 75px;
+}
+
+.btn-premium{
+    background-color: #00A2F7;
+    width: 156px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
