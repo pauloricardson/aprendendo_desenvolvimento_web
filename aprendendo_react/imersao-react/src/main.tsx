@@ -10,8 +10,7 @@ createRoot(document.getElementById('root')!).render(
     <div className="flex flex-col bg-[#c2dfef] h-screen">
       <Header />
         <div className="flex-1 max-w-[1200px] w-full m-auto">
-          <Filter title="componente-paulo"/>
-          <Filter title="Outro componente"/>
+          <Filter title="Busque o conteúdo que deseja assistir hoje" placeholder='Busque seu curso'/>
         </div>
       <Footer />
     </div>
