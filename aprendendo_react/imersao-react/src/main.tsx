@@ -10,7 +10,8 @@ createRoot(document.getElementById('root')!).render(
     <div className="flex flex-col bg-[#c2dfef] h-screen">
       <Header />
         <div className="flex-1 max-w-[1200px] w-full m-auto">
-          <Filter />
+          <Filter title="componente-paulo"/>
+          <Filter title="Outro componente"/>
         </div>
       <Footer />
     </div>
