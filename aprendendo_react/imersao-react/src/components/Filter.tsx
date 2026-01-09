@@ -18,4 +18,6 @@ function Filter(props:{title: string}) {
     );
 }
 
+// parei em 2:16:24 - https://www.youtube.com/watch?v=WnQ6WrffEok&t=6s
+
 export default Filter;
