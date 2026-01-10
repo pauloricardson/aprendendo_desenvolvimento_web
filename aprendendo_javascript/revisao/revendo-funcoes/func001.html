@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de função</title>
+</head>
+
+<body>
+    <div class="d1">Olá</div>
+    <div class="d1">Olá</div>
+    <div class="d1">Olá</div>
+    <button onclick="mudarTexto()">Mudar Texto</button>
+
+    <script>
+        function mudarTexto() {
+            let d1 = document.querySelectorAll(".d1");
+            d1.forEach(el => {
+                el.innerHTML = "texto";
+            });
+        } 
+    </script>
+</body>
+
+</html>
