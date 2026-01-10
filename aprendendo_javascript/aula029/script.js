@@ -10,6 +10,8 @@ function aluno(nome, nota) {
     }
 }
 
-const al1 = new aluno("Bruno", 1000);
+const al1 = new aluno("Bruno", 100);
+const al2 = new aluno("Paulo", 80);
 
 al1.dados_arrow();
+al2.dados_arrow();
