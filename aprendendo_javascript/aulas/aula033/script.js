@@ -1,9 +1,11 @@
 const divTodos = [...document.getElementsByTagName("div")];
 const cursosC1 = [...document.getElementsByClassName("c1")];
 const cursosC2 = [...document.getElementsByClassName("c2")];
-const cursoEspecial = document.getElementsById("c1");
 
-const query_divTodas = document.querySelectorAll("div");
+const query_cursoTodos = [...document.querySelectorAll(".curso")];
+const query_divEspecial = document.querySelectorAll("#c1");
+
+const query_divTodas = [...document.querySelectorAll("div > p")];
 
 console.log(query_divTodas);
 
