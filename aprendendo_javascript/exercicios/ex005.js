@@ -18,3 +18,19 @@
 
 // checkSpeed(100);
 
+function checkSpeed(speed) {
+    const speedLimit = 60;
+    const kmPerPoint = 5;
+
+    if (speed <= speedLimit + kmPerPoint)
+        console.log(speed);
+    else {
+        let points = (speed - speedLimit) / kmPerPoint;
+        if (points > 5)
+            console.log('License Suspended');
+        else
+            console.log('points: ', points);
+    }
+}
+
+checkSpeed(66);
