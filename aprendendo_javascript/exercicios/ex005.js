@@ -25,7 +25,7 @@ function checkSpeed(speed) {
     if (speed <= speedLimit + kmPerPoint)
         console.log(speed);
     else {
-        let points = (speed - speedLimit) / kmPerPoint;
+        let points = Math.floor((speed - speedLimit) / kmPerPoint - 0.1);
         if (points > 5)
             console.log('License Suspended');
         else
@@ -33,4 +33,4 @@ function checkSpeed(speed) {
     }
 }
 
-checkSpeed(66);
+checkSpeed(91);
