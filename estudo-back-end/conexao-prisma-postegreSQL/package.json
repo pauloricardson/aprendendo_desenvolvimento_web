@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "conexao-prisma-postegresql",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "@types/node": "^25.0.6",
     "@types/pg": "^8.16.0",
