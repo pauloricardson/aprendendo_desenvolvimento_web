@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php">
+        <label for="num">Número: </label>
+        <input type="range" name="num" id="num" min="0" max="10" value="5" oninput="val.innerHTML = Number(num.value)">
+        <output id="val">5</output>
+
+        <p>
+            <label for="idade">Sua idade: </label>
+            <input type="number" name="idade" id="idade" min="1900" max="2026" oninput="mostrarIdade()">
+
+            <output id="validade">0</output>
+        </p>
+
+    </form>
+
+    <script>
+        const mostrarIdade = () => {
+            let anoAtual = new Date().getFullYear();
+            validade.innerHTML = Number(anoAtual) - Number(idade.value)
+        }
+    </script>
+</body>
+</html>
