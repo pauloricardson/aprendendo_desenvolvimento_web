@@ -7,21 +7,22 @@
 </head>
 <body>
     <h1>Exemplo de Fomulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
 
-        <fieldset>
-            <legend>Sexo</legend>
-            <input type="radio" name="sexo" id="masc" value="M"><label for="masc">Masculino</label>
-            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
-        </fieldset>
+        <p>
+            <label for="cor"> Cor</label>
+            <input type="color" name="" id="">
+        </p>
 
-        <fieldset>
-            <legend>Esportes Favoritos</legend>
-            <input type="checkbox" name="e1" id="e1" checked><label for="e1">Futebol</label>
-            <input type="checkbox" name="e2" id="e2"><label for="e2">Baquete</label>
-            <input type="checkbox" name="e3" id="e3"><label for="e3">Natação</label>
-            <input type="checkbox" name="e4" id="e4"><label for="e2">Tênis </label>
-        </fieldset>
+        <p>
+            <label for="nivel">Nivel de Satisfação</label>
+            <input type="range" name="" id="">
+        </p>
+
+        <p>
+            <label for="foto">Foto</label>
+            <input type="file" name="" id="">
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
