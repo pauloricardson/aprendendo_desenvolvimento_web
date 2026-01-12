@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <h1>Exemplo de Fomulário</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="M"><label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="e1" id="e1" checked><label for="e1">Futebol</label>
+            <input type="checkbox" name="e2" id="e2"><label for="e2">Baquete</label>
+            <input type="checkbox" name="e3" id="e3"><label for="e3">Natação</label>
+            <input type="checkbox" name="e4" id="e4"><label for="e2">Tênis </label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
