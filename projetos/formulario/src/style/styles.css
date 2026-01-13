@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #120b3d, #655EEB);
+    position: relative;
+}
+
+main {
+    background-color: #d3d1ff;
+    max-width: 500px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.form-head>h1 {
+    color: black;
+    position: relative;
+    font-size: 2.5em;
+}
+
+.form-head>h1::before {
+    content: '';
+    width: 100px;
+    border-bottom: 5px solid #655EEB;
+    position: absolute;
+    bottom: -5px;
+    border-radius: 50px;
+}
+
+.form-head>.btn-login {
+    background-color: #655EEB;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.form-head>.btn-login:hover {
+    background-color: #120b3d;
+    transition: 0.2s;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.name div {
+    position: relative;
+}
+
+.name div span {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 5%;
+}
+
+fieldset.name>legend {
+    display: none;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset.sex-input {
+    border: 1px solid #655EEB;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+fieldset.sex-input legend {
+    padding: 0 10px;
+}
+
+.name input, .date-email input {
+    width: 200px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.date-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.date-email div {
+    position: relative;
+}
+
+.date-email span {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+input {
+    text-decoration: none;
+    font-style: italic;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.sex-input{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-create button {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    font-size: 1.2em;
+    background-color: #655EEB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-create button:hover{
+    background-color: #120b3d;
+}
+
+label, legend {
+    font-weight: 500;
+}

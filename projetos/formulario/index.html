@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style/styles.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <main>
+        <div class="form-head">
+            <h1>Criar conta</h1>
+            <button class="btn-login"><i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+        <form action="#" method="post" id="form">
+            <fieldset class="name">
+                <legend>Dados pessoais</legend>
+
+                <div class="first-name">
+                    <label for="first-name">Primeiro nome</label><br>
+                    <input type="text" name="first-name" id="first-name" placeholder="Fulano">
+                    <span><i class="fa-regular fa-user"></i></span>
+                </div>
+
+                <div class="last-name">
+                    <label for="last-name">Último nome</label><br>
+                    <input type="text" name="last-name" id="last-name" placeholder="de Tal">
+                    <span><i class="fa-regular fa-user"></i></span>
+                </div>
+            </fieldset>
+
+            <div class="date-email">
+                <div class="date-birth">
+                    <label for="date-birth">Data de nascimento</label><br>
+                    <input type="date" name="date-birth" id="date-birth">
+                    <span><i class="fa-regular fa-calendar"></i></span>
+                </div>
+                <div class="input-email">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                </div>
+            </div>
+            <fieldset class="sex-input">
+                <legend>Gênero</legend>
+
+                <label for="sex-male">
+                    <input type="radio" name="sex" id="sex-male" value="Masculino">
+                    Masculino
+                </label>
+
+                <label for="sex-female">
+                    <input type="radio" name="sex" id="sex-female" value="Feminino">
+                    Feminino
+                </label>
+                <label for="sex-female">
+                    <input type="radio" name="sex" id="sex-other" value="Outro">
+                    Outro
+                </label>
+            </fieldset>
+        </form>
+        <div class="btn-create">
+            <button>
+                <span><i class="fa-solid fa-check"></i></span>
+                <p>Criar conta</p>
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>
