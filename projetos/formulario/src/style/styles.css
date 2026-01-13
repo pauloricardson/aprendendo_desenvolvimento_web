@@ -10,12 +10,24 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #120b3d, #655EEB);
+    background-color: #051b05;
     position: relative;
 }
 
+header {
+    background-color: #d4fad9;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+}
+
 main {
-    background-color: #d3d1ff;
+    background-color: #d4fad9;
     max-width: 500px;
     position: absolute;
     border-radius: 10px;
@@ -33,7 +45,7 @@ main {
 }
 
 .form-head>h1 {
-    color: black;
+    color: #051b05;
     position: relative;
     font-size: 2.5em;
 }
@@ -41,14 +53,14 @@ main {
 .form-head>h1::before {
     content: '';
     width: 100px;
-    border-bottom: 5px solid #655EEB;
+    border-bottom: 5px solid #051b05;
     position: absolute;
     bottom: -5px;
     border-radius: 50px;
 }
 
 .form-head>.btn-login {
-    background-color: #655EEB;
+    background-color: #7e0913;
     width: 40px;
     height: 30px;
     border: none;
@@ -92,7 +104,7 @@ fieldset {
 }
 
 fieldset.sex-input {
-    border: 1px solid #655EEB;
+    border: 1px solid #051b05;
     padding: 20px;
     border-radius: 5px;
 }
@@ -153,7 +165,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     gap: 5px;
     font-weight: 700;
     font-size: 1.2em;
-    background-color: #655EEB;
+    background-color: #7e0913;
     color: white;
     border: none;
     border-radius: 5px;
