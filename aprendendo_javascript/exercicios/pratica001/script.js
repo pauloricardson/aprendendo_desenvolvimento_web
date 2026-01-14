@@ -10,6 +10,7 @@ cursos.forEach((el) => {
 
         if (caixa2.contains(select)){
             caixa1.appendChild(select);
+            return;
         }
 
         select.classList.toggle('selecionado');
@@ -26,12 +27,3 @@ btn_copiar.addEventListener('click', (evt) => {
 
 const cursosVoltar = document.querySelectorAll('.caixa2, .curso');
 
-
-/*
-cursosVoltar.forEach((el) => {
-   el.addEventListener('click', (evt) => {
-        const remover = evt.target;
-        caixa1.appendChild(remover);
-   })
-})
-*/
