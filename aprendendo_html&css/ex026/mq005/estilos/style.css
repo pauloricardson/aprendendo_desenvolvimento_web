@@ -29,7 +29,7 @@ header>h1 {
 menu>ul>li {
     display: inline-block;
     background-color: rgb(57, 57, 57);
-    padding: 10px 20px;
+    padding: 20px 20px;
 
 }
 
@@ -45,7 +45,7 @@ menu>ul>li>a {
 article {
     background-color: white;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     border-radius: 10px;
     margin: auto;
     margin-top: 20px;
@@ -65,17 +65,28 @@ article>p {
 }
 
 @media screen and (max-width: 600px) {
+
+    header>h1 {
+        font-size: 2em;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
     .btn-menu {
         display: block;
         width: 100%;
-        background-color: rgb(57, 57, 57);
+        background-color: white;
         border: none;
-        padding: 20px;
-        text-align: left;
+        padding: 10px;
+    }
+
+    menu>ul>li>a{
+        font-size: 1em;
+
     }
 
     .btn-menu>img {
-        height: 40px;
+        height: 25px;
     }
 
     .menu {
@@ -94,6 +105,20 @@ article>p {
         max-width: 100%;
         text-align: center;
         padding: 20px 0;
+        border-bottom: 2px solid lightgrey;
+    }
+
+    article>h2 {
+        font-size: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+
+    article>p {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+        text-indent: 3em;
     }
 
 }
