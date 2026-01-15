@@ -79,12 +79,15 @@ article>p {
     }
 
     .menu {
-        display: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
     }
 
     .menu-mostrar {
-        display: block !important;
+        max-height: 500px;
     }
+
 
     menu>ul>li {
         display: block;
