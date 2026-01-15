@@ -2,3 +2,40 @@
 
 /* Todas a demais mídias */
 
+/* 
+
+Extra Small (Mobile):                   ~320px - 575px      (Older phones, small devices).
+Small (Large Phones/Small Tablets):     ~576px - 767px      (Landscape phones, small tablets)
+Medium (Tablets):                       ~768px - 991px      (Portrait tablets).
+Large (Laptops/Desktops):               ~992px - 1199px     (Small desktops, laptops).
+Extra Large (Desktops):                 ~1200px - 1399px    (Standard monitors).
+Extra Extra Large (Large Screens):        1400px+           (Large monitors, TVs)
+
+*/
+
+@media print {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+

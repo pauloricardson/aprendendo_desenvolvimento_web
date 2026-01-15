@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+html {
     width: 100vw;
     height: 100vh;
 }
@@ -19,7 +19,6 @@ body {
     background: url(../images/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 10px;
 }
 
 main {
@@ -43,6 +42,8 @@ img {
 }
 
 
-img#tablet, img#print, img#pc, img#tv {
-    display: none;
-}
+img#phone {display: block;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#pc {display: none;}
+img#tv {display: none;}
