@@ -13,4 +13,31 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 60px;
+}
+
+nav a {
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
 }
