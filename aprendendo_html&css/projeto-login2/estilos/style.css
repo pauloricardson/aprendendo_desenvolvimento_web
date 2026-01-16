@@ -41,12 +41,14 @@ section#login {
 }
 
 section#login>div#imagem {
+    display: block;
     background: var(--cor-2) url(../images/pexels-caique-araujo-101156227-15705997.jpg);
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-section#login>div#formulario {
-    
+div#fomulario {
+    display: block;
+    padding: 10px;
 }
