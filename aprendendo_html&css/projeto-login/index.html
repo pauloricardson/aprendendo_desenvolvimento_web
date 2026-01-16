@@ -19,14 +19,20 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
                 <form action="login" method="post">
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="seu e-mail">
 
-                    <label for="senha"></label>
-                    <input type="password" name="senha" id="senha" placeholder="sua senha">
+                    <div class="email-login">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="seu e-mail">
+                    </div>
+
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="sua senha">
+                    </div>
 
                     <input type="submit" value="Entrar">
                     <input type="button" value="Esqueci a Senha">
+
                 </form>
             </div>
         </section>
