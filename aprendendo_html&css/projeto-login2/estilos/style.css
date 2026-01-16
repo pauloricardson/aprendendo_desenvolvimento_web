@@ -54,3 +54,12 @@ div#fomulario {
     display: block;
     padding: 10px;
 }
+
+div#fomulario>h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#fomulario>p{
+    font-size: 0.8em;
+}
