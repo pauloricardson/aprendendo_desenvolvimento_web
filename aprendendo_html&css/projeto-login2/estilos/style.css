@@ -74,6 +74,10 @@ form>input[type=submit] {
     border-radius: 5px;
 }
 
+label {
+    display: none;
+}
+
 form>a.btn{
     display: block;
     text-align: center;
