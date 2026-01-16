@@ -26,12 +26,18 @@
                 <form action="login" method="post">
 
                     <div class="email-login">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="seu e-mail">
+                        <span class="material-symbols-outlined">mail</span>
+                        <label for="email">
+                            <input type="email" name="email" id="email" placeholder="seu e-mail">
+                        </label>
                     </div>
 
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha" placeholder="sua senha">
+                    <div class="senha-login">
+                        <span class="material-symbols-outlined">key</span>
+                        <label for="senha">
+                            <input type="password" name="senha" id="senha" placeholder="sua senha">
+                        </label>
+                    </div>
 
                     <input class="btn-entrar" type="submit" value="Entrar">
                     <input class="btn-esqueci-senha" type="button" value="Esqueci a Senha">
