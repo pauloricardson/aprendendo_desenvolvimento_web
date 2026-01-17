@@ -17,8 +17,15 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     width: 100vh;
-    min-height: 100vh;
     background-color: white;
+}
+
+header>div.info-header {
+    background-color: black;
+
+}
+header>div.info-header>img {
+    width: ;
 }
