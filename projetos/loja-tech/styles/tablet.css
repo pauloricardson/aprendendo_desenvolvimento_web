@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    header>div.search-banner>div.search {
+        display: none !important;
+    }
+
+    header>div.principal-header>div.search-principal {
+        display: block !important;
+    }
+}
+

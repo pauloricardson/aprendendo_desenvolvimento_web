@@ -70,6 +70,10 @@ header>div.principal-header>div.logo>img {
     height: 25px;
 }
 
+header>div.principal-header>div.search-principal {
+    display: none;
+}
+
 header>div.search-banner {
     width: 100%;
     height: 210px;
