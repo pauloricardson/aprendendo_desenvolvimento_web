@@ -15,6 +15,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -22,13 +23,43 @@ body {
     background-color: white;
 }
 
-header>div.info-header {
-    background-color: black;
-
+header{
+    width: 100vw;
 }
 
+header>div.info-header {
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 
+header>div.info-header>p{
+    color: white;
+    font-size: 0.5em;
+}
 
 header>div.info-header>img {
     width: 15px;
+}
+
+header>div.principal-header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header>div.principal-header>div.btn-header>img {
+    height: 35px;
+}
+
+header>div.principal-header>div.logo>img {
+    height: 25px;
 }
