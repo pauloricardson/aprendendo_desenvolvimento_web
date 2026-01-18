@@ -14,3 +14,10 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    div.search1>input {
+        width: 400px !important;
+    }
+}
+
+
