@@ -143,7 +143,6 @@ div.cep>div {
 .carousel {
     width: 100%;
     overflow: hidden;
-    padding: 16px 0;
     background: linear-gradient(to bottom, var(--cor6), white);
 }
 
@@ -164,4 +163,22 @@ div.cep>div {
     width: 100%;
     display: block;
     border-radius: 5px;
+}
+
+.carousel-control {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.carousel-control .ponto {
+    background-color: var(--cor1);
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.foco {
+    width: 15px !important;
 }
