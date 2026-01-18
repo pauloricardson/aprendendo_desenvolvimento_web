@@ -141,7 +141,12 @@ div.cep>div {
     gap: 2px;
 }
 
-main {
+.degrade {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--cor6), white);
+}
+
+.limit {
     max-width: 1200px;
     margin: auto;
 }
