@@ -55,17 +55,17 @@ header>div.principal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 header>div.principal-header>div.btn-header {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 header>div.principal-header>div.btn-header>img {
     cursor: pointer;
-    height: 30px;
+    height: 25px;
 }
 
 header>div.principal-header>div.logo>img {
@@ -116,4 +116,27 @@ div.search>img {
     top: 50%;
     transform: translateY(-50%);
     right: 18px;
+}
+
+div.cep {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+div.cep p {
+    color: var(--cor1);
+    font-size: 0.8em;
+}
+
+div.cep img {
+    height: 20px;
+}
+
+div.cep>div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
