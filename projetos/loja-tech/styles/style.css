@@ -141,53 +141,63 @@ div.cep>div {
     gap: 2px;
 }
 
-.degrade {
-    width: 100%;
-    background: linear-gradient(to bottom, var(--cor6), white);
-}
 
-.limit {
-    max-width: 1200px;
-    margin: auto;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .carousel {
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(to bottom, var(--cor6), white);
+    padding: 16px 0; /* espaço para mostrar os cantinhos */
 }
 
 .carousel-track {
     display: flex;
-    gap: 12px;
+    gap: 12px; /* espaço entre os slides */
     transition: transform 0.5s ease;
-    justify-content: center;
+    will-change: transform;
 }
 
+/* Slide NÃO ocupa 100% */
 .slide {
     flex: 0 0 85%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .slide img {
     width: 100%;
+    height: auto;
     display: block;
-    border-radius: 5px;
 }
 
+/* Indicadores */
 .carousel-control {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    padding: 10px;
+    gap: 8px;
+    margin-top: 10px;
 }
 
-.carousel-control .ponto {
-    background-color: var(--cor1);
-    width: 5px;
-    height: 5px;
-    border-radius: 10px;
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: #cbd5e1;
 }
 
-.foco {
-    width: 15px !important;
+.dot.active {
+    background: #0ea5e9;
+    width: 20px !important;
+    transition: transform 0.5s ease;
 }
