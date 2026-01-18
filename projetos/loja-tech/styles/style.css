@@ -51,7 +51,7 @@ header>div.info-header>img {
 header>div.principal-header {
     max-width: 1200px;
     height: 50px;
-    background-color: var(--cor6);
+    background-color: var(--cor);
     display: flex;
     justify-content: space-between;
     align-items: center;
