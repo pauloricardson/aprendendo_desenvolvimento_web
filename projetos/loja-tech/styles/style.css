@@ -70,22 +70,22 @@ header>div.principal-header>div.logo>img {
     height: 25px;
 }
 
-header>div.principal-header>div.search-principal {
-    display: none;
+div.search1 {
+    display: none !important;
 }
 
-header>div.search-banner {
+div.search-banner {
     width: 100%;
     height: 210px;
     background: linear-gradient(to bottom, white, var(--cor4), white);
 }
 
-header>div.search-banner>div.search {
+div.search {
     display: flex;
     position: relative;
 }
 
-header>div.search-banner>div.search>input {
+div.search>input {
     width: 100%;
     height: 30px;
     margin: 5px 15px;
@@ -94,13 +94,13 @@ header>div.search-banner>div.search>input {
     padding-left: 10px;
 }
 
-header>div.search-banner>div.search>input::placeholder{
+div.search>input::placeholder{
     color: rgb(180, 180, 180);
     font-size: 0.85em;
     font-style: italic;
 }
 
-header>div.search-banner>div.search>img {
+div.search>img {
     position: absolute;
     height: 25px;
     top: 50%;

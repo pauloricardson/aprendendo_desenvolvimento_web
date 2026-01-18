@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    header>div.search-banner>div.search {
+@media screen and (min-width: 576px) {
+    div.search2 {
         display: none !important;
     }
 
-    header>div.principal-header>div.search-principal {
+    div.search1 {
         display: block !important;
+    }
+
+    div.search1>input {
+        width: 200px;
     }
 }
 
