@@ -15,7 +15,7 @@ cursos.map((el, i) => {
     btn_lixeira.setAttribute("class", "btn_lixeira")
 
     btn_lixeira.addEventListener('click', (evt) => {
-        btn_lixeira.parentNode.removeChild(evt.target)
+        caixa1.removeChild(evt.target.parentNode)
     })
 
     novoElemento.appendChild(btn_lixeira);
