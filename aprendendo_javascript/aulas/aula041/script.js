@@ -9,5 +9,15 @@ cursos.map((el, i) => {
     novoElemento.setAttribute("id", "c" + (i + 1));
     novoElemento.setAttribute("class", "curso c1")
     novoElemento.innerHTML = (el)
+
+    const btn_lixeira = document.createElement("img")
+    btn_lixeira.setAttribute("src", "./delete.png")
+    btn_lixeira.setAttribute("class", "btn_lixeira")
+
+    btn_lixeira.addEventListener('click', (evt) => {
+        btn_lixeira.parentNode.removeChild(evt.target)
+    })
+
+    novoElemento.appendChild(btn_lixeira);
     caixa1.appendChild(novoElemento)
 })
