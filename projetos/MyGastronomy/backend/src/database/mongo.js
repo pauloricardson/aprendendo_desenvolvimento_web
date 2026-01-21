@@ -12,6 +12,8 @@ export const Mongo = {
             this.client = client
             this.db = db
 
+            return 'Connected to mongo!'
+
         } catch (error) {
             return { text: 'Error during mongo connection', error }
         }
