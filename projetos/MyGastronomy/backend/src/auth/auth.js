@@ -25,5 +25,11 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, passwor
         }
 
         const userPasswordBuffer = Buffer.from(user.password.buffer)
+
+        if (!crypto.timingSafeEqual(userPasswordBuffer, hashedPassword)) {
+            return callback(null, false)
+        }
+
+        const { password, salt, ...rest } = user
     })
 }))
