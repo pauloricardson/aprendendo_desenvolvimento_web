@@ -21,7 +21,7 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, passwor
 
     crypto.pbkdf2(password, saltBuffer, 310000, 16, 'sha125', (err, hashedPassword) => {
         if (err) {
-            return callback(err, false)
+            return callback(null, false)
         }
 
         const userPasswordBuffer = Buffer.from(user.password.buffer)
@@ -31,5 +31,28 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, passwor
         }
 
         const { password, salt, ...rest } = user
+
+        return callback(null, rest)
     })
 }))
+
+const authRouter = express.Router()
+
+authRouter.post('/signup', async (req, res) => {
+    const checkUser = await Mongo.db
+    .collection(collectionName)
+    .findOne({ email: req.body.email })
+
+    if (checkUser) {
+        return res.status(500).send({ 
+            success: false,
+            statusCode: 500,
+            body: {
+                text: 'User already exists'
+            }
+         })
+    }
+
+    const salt = crypto.randomBytes(16)
+    
+})
