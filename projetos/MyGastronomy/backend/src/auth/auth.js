@@ -9,9 +9,9 @@ import { ObjectId } from 'mongodb'
 const collectionName = 'users'
 
 passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, password, callback) => {
-    const user = await Mongo.db 
-    .collection(collectionName)
-    .findOne({ email: email })
+    const user = await Mongo.db
+        .collection(collectionName)
+        .findOne({ email: email })
 
     if (!user) {
         return callback(null, false)
@@ -40,19 +40,59 @@ const authRouter = express.Router()
 
 authRouter.post('/signup', async (req, res) => {
     const checkUser = await Mongo.db
-    .collection(collectionName)
-    .findOne({ email: req.body.email })
+        .collection(collectionName)
+        .findOne({ email: req.body.email })
 
     if (checkUser) {
-        return res.status(500).send({ 
+        return res.status(500).send({
             success: false,
             statusCode: 500,
             body: {
                 text: 'User already exists'
             }
-         })
+        })
     }
 
     const salt = crypto.randomBytes(16)
-    
+    crypto.pbkdf2(req.body.password, salt, 310000, 16, 'sha256', async (err, hashedPassword) => {
+        if (err) {
+            return res.status(500).send({
+                success: false,
+                statusCode: 500,
+                body: {
+                    text: 'Error on crypto password!',
+                    err: err
+                }
+            })
+        }
+
+        const result = await Mongo.db
+            .collection(collectionName)
+            .insertOne({
+                email: req.body.email,
+                password: hashedPassword,
+                salt
+            })
+
+        if (result.insertedId) {
+            const user = await Mongo.db
+                .collection(collectionName)
+                .findOne({ _id: new ObjectId(result.insertedId) })
+
+            const token = jwt.sign(user, 'secret')
+
+            return res.send({
+                success: true,
+                statusCode: 200,
+                body: {
+                    text: 'User registered correctly!',
+                    token,
+                    user,
+                    logged: true
+                }
+            })
+        }
+    })
 })
+
+export default authRouter
