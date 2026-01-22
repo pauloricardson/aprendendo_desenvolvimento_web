@@ -29,7 +29,4 @@ async function main () {
     })
 }
 
-
-
-
 main()
