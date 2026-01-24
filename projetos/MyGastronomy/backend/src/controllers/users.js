@@ -6,5 +6,13 @@ export default class UsersControllers {
         this.dataAccess = new UsersDataAccess()
     }
 
-    
+    async getUsers() {
+        try {
+            const users = this.dataAccess.getUsers()
+
+            return ok(users)
+        } catch (error) {
+            return serverError(error)
+        }
+    }
 }
