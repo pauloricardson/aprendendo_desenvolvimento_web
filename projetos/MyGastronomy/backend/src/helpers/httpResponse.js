@@ -1,11 +1,11 @@
-export const ok = () => {
+export const ok = (body) => {
 
 }
 
-export const notFound = () => {
+export const notFound = (body) => {
 
 }
 
-export const serverError = () => {
+export const serverError = (body) => {
 
 }
