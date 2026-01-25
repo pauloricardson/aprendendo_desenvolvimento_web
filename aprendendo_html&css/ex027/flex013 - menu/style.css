@@ -5,3 +5,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: grey;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+header > h1 {
+    border: 1px dotted black;
+}
+
+header > menu {
+    border: 1px dotted black;
+}
+
+main {
+    background-color: white;
+}
