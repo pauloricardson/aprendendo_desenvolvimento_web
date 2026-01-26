@@ -33,6 +33,8 @@ header > h1 {
 header > menu {
     border: 1px dotted black;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 header > menu > a {
