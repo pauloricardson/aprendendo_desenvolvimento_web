@@ -26,12 +26,10 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
     flex: 0 0 200px;
 }
 
 header > menu {
-    border: 1px dotted black;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -60,4 +58,18 @@ main {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.387);
+}
+
+@media screen and (max-width: 550px) {
+    header, header > menu {
+        flex-flow: column nowrap;
+    }  
+
+    header > h1 {
+        flex-basis: 50px;
+    }
+
+    header > menu > a {
+        width: 90vw;
+    }
 }
