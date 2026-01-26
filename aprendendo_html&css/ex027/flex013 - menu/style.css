@@ -27,10 +27,12 @@ header {
 
 header > h1 {
     border: 1px dotted black;
+    flex: 0 0 200px;
 }
 
 header > menu {
     border: 1px dotted black;
+    display: flex;
 }
 
 header > menu > a {
