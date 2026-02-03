@@ -1,15 +1,14 @@
-let num1 = 0;
-let num2 = 0;
-let rest = 0;
+/*
 
-num1 = 10;
-num2 = 2;
+>
+<   
+>=
+<=
+==
+!=
 
-// rest = num1 % num2;
+*/
 
-num1 += 1;
+let num1 = 10, num2 = 5, num3 = 10;
 
-//console.log(rest);
-
-console.log(num1);
-
+console.log(num1 == num2);
